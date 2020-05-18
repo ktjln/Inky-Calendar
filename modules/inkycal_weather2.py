@@ -218,7 +218,7 @@ def generate_image():
        return {0: '\uf095',1: '\uf099',2: '\uf09c',3: '\uf0a0',
                4: '\uf0a3',5: '\uf0a7',6: '\uf0aa',7: '\uf0ae' }[int(index) & 7]
 
-#      moonphase = get_moon_phase()
+      moonphase = get_moon_phase()
 
       """Add weather details in column 1"""
       now_str_time = time.strftime("@%H:%M")
@@ -244,13 +244,14 @@ def generate_image():
         font = font)
 
       """Add weather details in column 3"""
-#      write_text(column_width, row_height, moonphase, (column3, row1),
-#        font = w_font, fill_height = 0.9)
       write_text(column_width, row_height, '\uf051', (column3, row1),
         font = w_font, fill_height = 0.9)
       write_text(column_width, row_height, to_hours(sunrise_time_now),
         (column3, row2), font = font)
-      write_text(column_width, row_height, '\uf052', (column3, row3),
+# '\uf052' = sunset icon
+#      write_text(column_width, row_height, '\uf052', (column3, row3),
+#        font = w_font, fill_height = 0.9)
+      write_text(column_width, row_height, moonphase, (column3, row3),
         font = w_font, fill_height = 0.9)
       write_text(column_width, row_height, to_hours(sunset_time_now),
         (column3, row4), font = font)
