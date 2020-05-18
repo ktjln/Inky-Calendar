@@ -10,8 +10,11 @@ language = "de"                       # "en" # "de" # "fr" # "jp" etc.
 units = "metric"                      # "metric" # "imperial"
 hours = "24"                          # "24" # "12"
 top_section = "inkycal_weather2"      # "inkycal_weather"
-middle_section = "inkycal_calendar"   # "inkycal_agenda" #"inkycal_calendar"
+middle_section = "inkycal_calendar"   # "inkycal_agenda" # "inkycal_calendar"
 bottom_section = "inkycal_rss"        # "inkycal_rss"
+display_orientation = "normal"        # "normal" # "upside_down"
+render_target = "eink"                # "eink" # "image_only"
+show_event_begin_only = "false"       # "true" # "false"
 
 """Adding multiple iCalendar URLs or RSS feed URLs"""
 # Single URL:
