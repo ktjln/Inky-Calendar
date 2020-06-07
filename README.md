@@ -98,8 +98,11 @@ If you encounter errors related to your iCalendar, please feel free to report th
 Before updating, re-name the current Inky-Calendar folder e.g. Inky-Calendar-old and then run the installer again (see above), choosing the **update** option.
 
 ## Running Inky-Calendar manually and as service
-$ python3 modules/inkycal.py
-$ service supervisor start Inky-Calendar
+To run Inky-Calendar manually, execute the following command from your Inky_Calendar folder:
+`python3 modules/inkycal.py`
+
+To run Inky-Calendar as a service, execute following command:
+`service supervisor start Inky-Calendar`
 
 ## Setting up VS Code Remote development in WSL
 In order to speed up development, most development tasks (apart from the actual rending to E-Ink display) can be developed on more powerful machines and in richer environments than running this on a Pi zero. In case of Windows PC the most convenient way is to use VS Code Remote development in Windows Subsystem for Linux (WSL), please follow [Tutorial](https://code.visualstudio.com/remote-tutorials/wsl/getting-started). 
