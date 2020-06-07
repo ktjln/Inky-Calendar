@@ -15,7 +15,7 @@ from time import sleep
 import gc
 import logging
 
-"""Perepare for execution of main programm"""
+"""Prepare for execution of main programm"""
 calibration_countdown = 'initial'
 skip_calibration = False
 
